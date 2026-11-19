@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Uyirey, Ruby ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <nav class="nav"><span class="brand">ruby <span>♡</span> moni</span><a href="#letter">your letter</a></nav>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">a little page made with a lot of love</div>
+      <div class="heart-stamp">♡</div>
+      <p class="date">16 · 12 · 2026</p>
+      <div class="countdown" id="countdown">Counting down to your special day ♡</div>
+      <h1>Happy Birthday<br><em>Uyirey, Ruby!</em></h1>
+      <p class="hero-text">Today is all about celebrating the lovely soul who makes my days a little brighter.</p>
+      <a class="primary" href="#surprises">Open your little surprises <span>↓</span></a>
+      <div class="scroll-note">scroll slowly, there's love everywhere</div>
+    </section>
+
+    <section class="quotes section">
+      <p class="eyebrow">little reminders</p>
+      <h2>Some friendships feel<br><em>like home.</em></h2>
+      <div class="quote-grid">
+        <article class="quote-card"><span>01</span><p>“Some people make the world softer just by being in it. You're one of them.”</p></article>
+        <article class="quote-card"><span>02</span><p>“A best friend is a little piece of home you carry everywhere.”</p></article>
+        <article class="quote-card"><span>03</span><p>“The best memories are ordinary days made unforgettable by the right person.”</p></article>
+      </div>
+    </section>
+
+    <section id="surprises" class="section surprise-section">
+      <p class="eyebrow">made just for you</p>
+      <h2>Choose a little<br><em>surprise, birthday girl</em></h2>
+      <div class="surprise-grid">
+        <article class="surprise-card">
+          <div class="icon">💌</div><h3>A letter from Moni</h3><p>A tiny piece of my heart, written for you.</p>
+          <button class="soft-button" id="letterBtn">Read your letter</button>
+        </article>
+        <article class="surprise-card">
+          <div class="icon">🫙</div><h3>Memory jar</h3><p>Tap to open a little reminder of us.</p>
+          <button class="soft-button" id="memoryBtn">Pick a memory</button>
+          <div class="reveal" id="memoryReveal" aria-live="polite"></div>
+        </article>
+        <article class="surprise-card">
+          <div class="icon">🎀</div><h3>Bestie quiz</h3><p>Let's see how well you know our friendship.</p>
+          <button class="soft-button" id="quizBtn">Start the quiz</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="letter" class="letter-section section">
+      <div class="letter-paper">
+        <div class="letter-top">♡ a letter for my uyir ♡</div>
+        <h2>Dear Ruby,</h2>
+        <p>Happy birthday to my favourite human and one of the sweetest parts of my life. I hope this new year brings you the kind of happiness that stays, peaceful days, big dreams coming true, and a thousand reasons to smile.</p>
+        <p>Thank you for being you—for the laughs, the little moments, the memories, and for making friendship feel so special. No matter how busy life gets or how much things change, I hope you always remember how precious you are to me.</p>
+        <p>May your heart always feel loved, your eyes always have reasons to sparkle, and your life be filled with beautiful surprises. You deserve every bit of goodness coming your way.</p>
+        <p class="letter-sign">With all my love,<br><em>Moni ♡</em></p>
+        <div class="letter-heart">♡</div>
+      </div>
+    </section>
+
+    <section class="last-surprise section">
+      <p class="eyebrow">one last thing...</p>
+      <h2>Ready for your<br><em>birthday magic?</em></h2>
+      <button class="primary" id="magicBtn">Make a wish ✨</button>
+      <p id="magicMessage" class="magic-message"></p>
+    </section>
+  </main>
+  <footer>Made with love, for Ruby <span>♡</span> · 16.12.2026</footer>
+
+  <dialog id="quizDialog">
+    <div class="dialog-content">
+      <button class="close" id="closeQuiz" aria-label="Close">×</button>
+      <p class="eyebrow">bestie check ✨</p>
+      <h2>Our friendship quiz</h2>
+      <p>What is the most important ingredient in our friendship?</p>
+      <div class="quiz-options">
+        <button data-answer="wrong">Matching outfits</button>
+        <button data-answer="right">Love, laughs & being there</button>
+        <button data-answer="wrong">Stealing each other's snacks</button>
+      </div>
+      <p id="quizResult"></p>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
